@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "devcontainer-delete",
+      "type": "shell",
+      "command": "docker rm -f bazbashrc",
+      "problemMatcher": [],
+      "presentation": {
+        "focus": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "bazbashrc",
+  "runArgs": [
+        "--name",
+        "bazbashrc"
+    ],
+  "image": "mcr.microsoft.com/devcontainers/base:alpine"
+}

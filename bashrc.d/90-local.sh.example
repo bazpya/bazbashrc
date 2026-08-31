@@ -1,0 +1,26 @@
+# Machine-specific settings. Copy to 99-local.sh (gitignored).
+# Loads last, so it overrides anything above it.
+
+baz_echo "Loading machine specific settings"
+
+#════════════════════════════  SSH Agent and Keys - Begin  ════════════════════════════
+
+# Check if ssh-agent is running by checking SSH_AUTH_SOCK environment variable
+# if [ -z "$SSH_AUTH_SOCK" ] || ! ssh-add -l >/dev/null 2>&1; then
+#     eval $(ssh-agent -s) >/dev/null 2>&1
+#     baz_echo "Started SSH agent."
+# fi
+# 
+# ssh-add ~/.ssh/bazGithub >/dev/null 2>&1
+# baz_echo "Added an SSH key."
+
+#════════════════════════════  Work Laptop  ════════════════════════════
+
+# I've put terraform in C:\Users\bazzazp\AppData\Local\Microsoft\WindowsApps
+# because that was already part of the PATH
+# alias tf="/c/Users/bazzazp/proj/terraform.exe"
+# alias tf="terraform"
+
+#════════════════════════════  Navigate  ════════════════════════════
+
+# cd $proj  # Terminal instances inside VSCode will also navigate which breaks your debugging
